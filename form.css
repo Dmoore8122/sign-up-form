@@ -72,10 +72,15 @@
 }
 
 input {
-    border: 2px solid #e5e7eb;
-    border-radius: 10%;
+    border: 2px solid #E5E7EB;
+    border-radius: 5px;
     width: 170px;
 }
+
+input:invalid {
+    border-color: red;
+}
+
 
 #info p {
     display: flex;
@@ -127,4 +132,12 @@ label {
     font-size: 10px;
 }
 
+.the-end {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
 
+/*input:invalid:not(:focus) {
+  border-color: red;
+}*/
